@@ -16,11 +16,8 @@ int main() {
 	setlocale(0, "Russian");
 	int a[] = { 5,6,12,9,8,4,6,7 };
 	int el;
-	int size = sizeof(a) / sizeof(a[0]);
-	cout << "Massive a: "<< endl;
-	for (int i = 0; i < size; i++) {
-		cout << a[i] << "\t";
-	}
+	int size = a.lenght();
+	cout << "array entered"<< endl;
 	cout <<endl<< "Enter an item to search"<<endl;	
 	cin >> el;
 	int num = findel(a, size, el);
