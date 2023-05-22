@@ -32,7 +32,7 @@ int main() {
 	cout << "Enter the number alfa " << endl;
 	cin >> alfa;
 	for (int i=0; i < 15; i++) {
-		a[i] = rand() % 201 - 100;
+		a[i] = rand() % 301 - 100;
 	}
 	for (int i=0; i < 15; i++) {
 		b[i] = rand() % 201 - 100;
@@ -45,9 +45,8 @@ int main() {
 	for (int i=0; i < 15; i++) {
 		cout << b[i] << " ";
 	}
-	for (int i = 0; i < 15; i++) {
-	}
 	func();
 	cout <<endl <<"Number of elements greater than alfa in array a =" << cnta;
 	cout << endl << "Number of elements greater than alfa in array b = " << cntb;
+	return 0;
 }
