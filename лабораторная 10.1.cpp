@@ -29,7 +29,7 @@ void func() {
 int main() {
 	setlocale(0, "Russian");
 	srand(time(NULL) + rand());
-	cout << "Введите число alfa " << endl;
+	cout << "Enter the number alfa " << endl;
 	cin >> alfa;
 	for (int i=0; i < 15; i++) {
 		a[i] = rand() % 201 - 100;
@@ -37,17 +37,17 @@ int main() {
 	for (int i=0; i < 15; i++) {
 		b[i] = rand() % 201 - 100;
 	}
-	cout << "Массив a:" << endl;
+	cout << "Massive a:" << endl;
 	for (int i=0; i < 15; i++) {
 		cout << a[i] << " ";
 	}
-	cout <<endl<< "Массив b:" << endl;
+	cout <<endl<< "Massive b:" << endl;
 	for (int i=0; i < 15; i++) {
 		cout << b[i] << " ";
 	}
 	for (int i = 0; i < 15; i++) {
 	}
 	func();
-	cout <<endl <<"Количество элементов, которые больше alfa, в массиве a = " << cnta;
-	cout << endl << "Количество элементов, которые больше alfa, в массиве b = " << cntb;
+	cout <<endl <<"Number of elements greater than alfa in array a =" << cnta;
+	cout << endl << "Number of elements greater than alfa in array b = " << cntb;
 }

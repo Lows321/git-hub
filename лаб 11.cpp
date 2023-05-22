@@ -17,17 +17,17 @@ int main() {
 	int a[] = { 5,6,12,9,8,4,6,7 };
 	int el;
 	int size = sizeof(a) / sizeof(a[0]);
-	cout << "Массив a : "<< endl;
+	cout << "Massive a: "<< endl;
 	for (int i = 0; i < size; i++) {
 		cout << a[i] << "\t";
 	}
-	cout <<endl<< "Введите элемент для поиска "<<endl;	
+	cout <<endl<< "Enter an item to search"<<endl;	
 	cin >> el;
 	int num = findel(a, size, el);
 	if (num == -1) {
-		cout << "Такого числа нет " << endl;
+		cout << "Not found " << endl;
 	}
 	else {
-		cout << "Номер искомого числа = " << num + 1;
+		cout << "The number of the desired number = " << num + 1;
 	}
 }
