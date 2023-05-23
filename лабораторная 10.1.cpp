@@ -3,9 +3,7 @@
 using namespace std;
 int i = 0;
 int j = 0;
-int alfa;
-int a[15];
-int b[15];
+int alfa, a[15], b[15];
 int cnta = 0;
 int cntb = 0;
 void func() {
@@ -36,14 +34,6 @@ int main() {
 	}
 	for (int i=0; i < 15; i++) {
 		b[i] = rand() % 201 - 100;
-	}
-	cout << "Massive a:" << endl;
-	for (int i=0; i < 15; i++) {
-		cout << a[i] << " ";
-	}
-	cout <<endl<< "Massive b:" << endl;
-	for (int i=0; i < 15; i++) {
-		cout << b[i] << " ";
 	}
 	func();
 	cout <<endl <<"Number of elements greater than alfa in array a =" << cnta;
